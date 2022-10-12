@@ -2,6 +2,7 @@ import { Box, Text, Button } from '@skynexui/components';
 import { useRouter } from 'next/router';
 import nookies from 'nookies';
 
+/* Parte da autenticação das paginas */
 export async function getServerSideProps(context) {
   const cookies = nookies.get(context);
   console.log('Cookies', cookies);
